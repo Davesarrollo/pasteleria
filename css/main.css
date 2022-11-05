@@ -46,7 +46,7 @@ nav{
     font-size: 1.2em;
 }
 
-                                /*   section  */
+                               /*   section  */
 section{
     background-color: #fff9ffaa;
     backdrop-filter: blur(5px);
@@ -71,19 +71,28 @@ h2{
     align-items:stretch
 }
 
-.card{
+.card, .dataCard{
     margin: 1em;
     background-color: #fff9ff;
     border-radius: 1em;
     box-shadow:-.1em 0.1em 1em #9c8b9caa;
-    padding: 1em;
     text-align: center;
     font-weight: 500;
     font-size: 1.2em;
-    max-width: 256px;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+}
+.card{
+    max-width: 256px;
+    padding: 1em;
+
+}
+
+.dataCard{
+    font-size: 1.2em;
+    width: 80%;
+    margin: auto;
 }
 
 .imgCard{
@@ -101,12 +110,30 @@ h2{
     font-weight: bold;
 }
 
-afooter{
-    text-align:center;
-    background-color: #6bb5ff;  
-    text-align: center;
-    overflow:hidden
+
+.card > input, .dataCard > input, .dataCard > textarea{
+    margin: auto;
+    margin-bottom: 1em;
+    width: 90%;
+    background-color: #fef  ;
+    border-radius: .5em;
+    border-color: #fef;
 }
+
+                            /*  footer  */
+footer{
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #ffe9ff;
+    border-radius: 1em;
+    box-shadow:-.1em 0.1em 1em #9c8b9caa;
+    background-image: url("/img/fondo.png");
+    border-style: solid;
+    border-color: #ffdfff;
+    margin-top: 1em;
+}
+
+
 
 tr, th, caption{
     background-color: #c5ff7a;
@@ -139,24 +166,8 @@ caption{
     font-weight: bolder;
 }
 
-.muestra{
-    height: 120px;
-    
-}
 
-
-
-ul{
-    list-style: none;
-    display:flex;  
- }
-
- li{
-     margin-left: .6em;
-     margin-right: .6em;
- }
-
- @media (max-width: 650px) {
+@media (max-width: 650px) {
     h1 {
       font-size: 3em;
     }
