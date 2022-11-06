@@ -5,6 +5,7 @@ body{
     margin:0;
     padding: 1em;
     font-family: Ubuntu;
+    color:#111
 }
 header, footer, section{
     max-width: 1680px;
@@ -44,6 +45,10 @@ h1{
 
 nav{
     font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: #111;
 }
 
                                /*   section  */
@@ -161,13 +166,35 @@ caption{
     font-weight: bold;
 }
 
+.megaButtons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:stretch;
+
+}
+
+.megaButton{
+    background-color: #fff9ff;
+    border-radius: 1em;
+    box-shadow:-.1em 0.1em 1em #9c8b9caa;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    min-width: 256px;
+    padding:6%
+}
+
+
+
 @media (max-width: 650px) {
     h1 {
       font-size: 3em;
-    }
-
-    .logo{
-        flex-wrap: nowrapa;
     }
     .imgLogo{
         max-width: 96px;
@@ -179,6 +206,9 @@ caption{
     th,td{
         font-size: .8rem;
     }
+    .megaButton{
+        font-size: 3.5em;
+    }
   }
 
 
@@ -186,14 +216,33 @@ caption{
     h1 {
       display: none;
     }
-
-    .logo{
-        flex-wrap: nowrapa;
-    }
     .imgLogo{
         max-width: 80px;
     }
     th,td{
         font-size: .6rem;
     }
+    .megaButton{
+        font-size: 3em;
+        min-width: 224px;
+    }
+
+  }
+
+  @media (max-width: 350px) {
+
+
+    .imgLogo{
+        max-width: 64px;
+    }
+    footer{
+        font-size: 1em;
+    }
+
+
+    .megaButton{
+        font-size: 2em;
+        min-width: 160px;
+    }
+
   }
