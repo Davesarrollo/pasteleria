@@ -7,31 +7,36 @@
     <meta name="theme-color" content="#FFDDFF">
     <title>Pasteleria</title>
     <link rel="StyleSheet" href="css/main.css" type="text/css">
+
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <img src="img/pasteleria.svg" alt="Logotipo" class="Logo">
-        <h1>Pastelería</h1>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logotipo" class="imgLogo">
+            <h1>Minikēki</h1>
+        </div>
         
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="cliente.html">Cliente</a>
+            <a href="cliente.html">cliente</a>
             <a href="pedidos.html">Pedidos</a>
         </nav>
-        
     </header>
     
-    
-    <article>
-        
-        <div class="container"> 
-            
+    <section>
+
+        <article class="tablas">            
             <table>
                 <caption>Sabores disponibles</caption>
                 <tr>
-                <th>Sabor</th>
-                <th>Restantes</th>
-            </tr>
+                    <th>Sabor</th>
+                    <th>Cantidad</th>
+                </tr>
                 <tr>
                     <td>sabor 1</td>
                     <td><script>document.write(Math.floor(Math.random()*20))</script></td>
@@ -48,6 +53,22 @@
                     <td>sabor 4</td>
                     <td><script>document.write(Math.floor(Math.random()*20))</script></td>
                 </tr>
+                <tr>
+                    <td>sabor 5</td>
+                    <td><script>document.write(Math.floor(Math.random()*20))</script></td>
+                </tr>
+                <tr>
+                    <td>sabor 6</td>
+                    <td><script>document.write(Math.floor(Math.random()*20))</script></td>
+                </tr>
+                <tr>
+                    <td>sabor 7</td>
+                    <td><script>document.write(Math.floor(Math.random()*20))</script></td>
+                </tr>
+                <tr>
+                    <td>sabor 8</td>
+                    <td><script>document.write(Math.floor(Math.random()*20))</script></td>
+                </tr>
             </table>
             
         
@@ -55,7 +76,7 @@
                 <caption>Decorados disponibles</caption>
                 <tr>
                     <th>Decorado</th>
-                    <th>Restantes</th>
+                    <th>Cantidad</th>
                 </tr>
                 <tr>
                     <td>Chocolate</td>
@@ -69,10 +90,14 @@
                     <td>Fresas</td>
                     <td><script>document.write(Math.floor(Math.random()*20))</script></td>
                 </tr>
+                <tr>
+                    <td>Cerezas</td>
+                    <td><script>document.write(Math.floor(Math.random()*20))</script></td>
+                </tr>
             </table>
-        </div>
-       
-        <div class="container">
+        </article>
+
+        <article class="tablas">
             <table>
                 <caption>Pedidos por realizar</caption>
                 <tr>
@@ -124,11 +149,9 @@
                     <td></td>
                 </tr>
             </table>
-                
-        </div>
-    </article>
-    
-        <br><br>
+        </article>
+    </section>
+    <br>
     <footer>
         <p>Encuentranos en:</p>
         <p>Dirección: Unidad habitacional Rinconada de acolapa, plaza de la piramide <br>

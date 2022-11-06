@@ -133,39 +133,33 @@ footer{
     margin-top: 1em;
 }
 
-
-
-tr, th, caption{
-    background-color: #c5ff7a;
-    text-align: center;
-    border: #abf561;
-    border-style: solid;
-    }
-caption{
-    background-color: #abf561;
+.tablas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: auto;
+    max-width: 1680px;
 }
 
 table{
-    flex-wrap: wrap;
-    border: #abf561;
-    border-style: solid;
-    border-collapse: collapse;
-    margin:1em;
-    max-width: 1200px;
-    min-width: 240px;
-    }
-
-td{
-    padding: 5px 3px;
-    border: #abf561;
-    border-style:solid
+    text-align: center;
+    background-color: #efe;
+    margin: auto;
+    margin-top:1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    padding: 3px;
+    box-shadow:-.1em 0.1em 1em #8CA58C;
 }
 
 caption{
+    background-color: #dfd;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
     font-size: 1.5em;
-    font-weight: bolder;
+    font-weight: bold;
 }
-
 
 @media (max-width: 650px) {
     h1 {
@@ -177,6 +171,13 @@ caption{
     }
     .imgLogo{
         max-width: 96px;
+    }
+    caption{
+        font-size: 1.2rem;
+    }
+
+    th,td{
+        font-size: .8rem;
     }
   }
 
@@ -191,5 +192,8 @@ caption{
     }
     .imgLogo{
         max-width: 80px;
+    }
+    th,td{
+        font-size: .6rem;
     }
   }
